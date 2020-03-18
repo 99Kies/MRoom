@@ -1,2 +1,2 @@
 # MRoom
-just a demo
+just a web demo
