@@ -16,6 +16,6 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN chmod 777 /docker-entrypoint.sh
 
-EXPOSE 8000
+EXPOSE 5000
 
 ENTRYPOINT ./docker-entrypoint.sh
