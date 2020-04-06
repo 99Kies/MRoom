@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_login import current_user, LoginManager
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, PasswordField
@@ -11,7 +10,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'secret string')
 
 bootstrap = Bootstrap(app)
-login_manager = LoginManager(app)
 
 password = generate_password_hash("123456")
 
@@ -36,4 +34,4 @@ def server():
     return render_template("server.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=33420)
